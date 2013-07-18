@@ -36,8 +36,8 @@
   
   <script type="text/template" id="item-template">
     <div class="view <%= color %> row-fluid span8 offset2" >        
-        <span class="span1 offset1">
-          <i class="icon-checkbox-unchecked"></i>
+        <span class="span1 offset1 toggle">
+          <i class="icon-checkbox-<%= completed ? 'checked' : 'unchecked' %>"></i>
         </span>
         <label class="checkbox span1">          
           <input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>          
